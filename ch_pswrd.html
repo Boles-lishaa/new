@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Change Password
+{% endblock %}
+
+{% block main %}
+
+<form action="/ch_pswrd" method="post">
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="current" placeholder="Current Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input autocomplete="off" autofocus class="form-control mx-auto w-auto" name="updated" placeholder="New Password" type="password">
+    </div>
+    <div class="mb-3">
+        <input class="form-control mx-auto w-auto" name="confirm" placeholder="Confirm New Password" type="password">
+    </div>
+
+    <button class="btn btn-primary" type="submit">Apply</button>
+</form>
+
+{% endblock %}

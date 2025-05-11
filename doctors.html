@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Doctors
+{% endblock %}
+
+
+{% block main %}
+    <table class="table table-striped">
+        <thead>
+
+
+            <th class="text-start">Name</th>
+            <th class="text-end">Specialty</th>
+            <th class="text-end">Doctor's City</th>
+
+        </thead>
+        <tbody>
+
+
+            {% for doctor in doctors %}
+                <tr>
+                    <td>{{ doctor.Name }}</td>
+                    <td>{{ doctor.Specialty }}</td>
+                    <td>{{ doctor.City }}</td>
+                </tr>
+
+
+            {% endfor %}
+
+
+        </tbody>
+        <tfoot>
+            <tr>
+                <td class="border-0 fw-bold center" colspan="3">We hope best luck!</td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+
+{% endblock %}
