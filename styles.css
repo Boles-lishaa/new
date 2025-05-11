@@ -1,0 +1,49 @@
+/* Size for brand */
+body {
+    background-color: #f0f0f0;
+}
+
+.navbar-brand .red {
+    color: red;
+}
+
+.navbar-brand .blue {
+    color: blue;
+}
+
+.navbar-nav .nav-link {
+    color: blue;
+}
+
+.navbar-nav .nav-link:hover {
+    color: red;
+}
+
+.alert-primary {
+    background-color: blue;
+    color: white;
+}
+
+.container {
+    color: blue;
+}
+
+footer {
+    background-color: red;
+    color: white;
+}
+
+footer i {
+    color: blue;
+}
+
+/*
+footer
+{
+    color: red;
+}
+*/
+/* this table is from copilot */
+table { width: 100%; border-collapse: collapse; } th, td { border: 1px solid black; padding: 8px; text-align: left; } tfoot { background-color: blue; /* Light grey background */ color: blue; /* Text color */ }
+
+
